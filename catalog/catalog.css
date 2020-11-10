@@ -1,0 +1,29 @@
+#head{
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    background: #545d69;
+    z-index: 1000;
+}
+/* Что бы наш следующий блок не заезжал под шапку
+как только страница загрузилась добавим отступ. */
+#content {
+    margin-top: 0%;
+}
+
+#button{
+    text-align: center;
+    color: #f0f8ff;
+    text-decoration: none;
+    user-select: none;
+    background: #ea4c88;
+}
+
+.button:hover{
+    background: #d44179;
+}
+
+body{
+    background-color: #363b41;
+    color: #f0f8ff;
+}
