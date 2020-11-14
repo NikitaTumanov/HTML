@@ -53,7 +53,9 @@ p {
 /* ---------- LOGIN ---------- */
 
 #login {
-    margin: 150px auto;
+
+    margin-top: 70px;
+    margin-left: 40%;
     width: 280px;
 }
 
@@ -101,7 +103,7 @@ p {
     border-radius: 3px;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
-    background-color: #ea4c88;
+    background-color: #ea964c;
     color: #eee;
     font-weight: bold;
     margin-bottom: 2em;
@@ -111,7 +113,7 @@ p {
 }
 
 #login form input[type="submit"]:hover {
-    background-color: #d44179;
+    background-color: #d49241;
 }
 
 #login > p {
@@ -120,44 +122,4 @@ p {
 
 #login > p span {
     padding-left: 5px;
-}
-
-/* Ñòèëè áàðà vladmaxi, ìîæíî óäàëèòü */
-.vladmaxi-top{
-    line-height: 24px;
-    font-size: 11px;
-    background: #eee;
-    text-transform: uppercase;
-    z-index: 9999;
-    position: fixed;
-    top:0;
-    left:0;
-    width:100%;
-    font-family: calibri;
-    font-size: 13px;
-    box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
-    -webkit-animation: slideOut 0.5s ease-in-out 0.3s backwards;
-}
-@-webkit-keyframes slideOut{
-    0%{top:-30px; opacity: 0;}
-    100%{top:0px; opacity: 1;}
-}
-
-.vladmaxi-top a{
-    padding: 0px 10px;
-    letter-spacing: 1px;
-    color: #333;
-    text-shadow: 0px 1px 1px #fff;
-    display: block;
-    float: left;
-}
-.vladmaxi-top a:hover{
-    background: #fff;
-}
-.vladmaxi-top span.right{
-    float: right;
-}
-.vladmaxi-top span.right a{
-    float: left;
-    display: block;
 }

@@ -35,7 +35,18 @@ A:active {
     text-align: center;
 }
 img.big {cursor: pointer; max-width: 150px;text-align: center;}
-img.big:hover {max-width: 100%;text-align: center;}
+img.big:hover {
+    max-width: 40%;
+    text-align: center;
+    box-shadow: 0 0 0 1px #cccccc,
+    0 -20px 10px -5px #8df596,
+    20px 0 10px -5px #8bffde,
+    0 20px 10px -5px #fdc6d3,
+    -20px 0 10px -5px #efffc9;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.7s ease;
+}
 
 button {
     position: relative;

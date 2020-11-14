@@ -53,12 +53,14 @@ p {
 /* ---------- LOGIN ---------- */
 
 #login {
-    margin: 150px auto;
+
+    margin-top: 70px;
+    margin-left: 40%;
     width: 280px;
 }
 
 .head{
-    color: aliceblue;
+    color: #f0f8ff;
     font-size: xx-large;
     text-align: center;
 }
@@ -101,7 +103,7 @@ p {
     border-radius: 3px;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
-    background-color: #ea4c88;
+    background-color: #ea964c;
     color: #eee;
     font-weight: bold;
     margin-bottom: 2em;
@@ -111,7 +113,7 @@ p {
 }
 
 #login form input[type="submit"]:hover {
-    background-color: #d44179;
+    background-color: #d49241;
 }
 
 #login > p {
@@ -122,7 +124,6 @@ p {
     padding-left: 5px;
 }
 
-/* Ñòèëè áàðà vladmaxi, ìîæíî óäàëèòü */
 .vladmaxi-top{
     line-height: 24px;
     font-size: 11px;
