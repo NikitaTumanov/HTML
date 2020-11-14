@@ -26,9 +26,6 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
-}
 
 input {
     border: none;
@@ -54,7 +51,7 @@ p {
 
 #login {
 
-    margin-top: 70px;
+    margin-top: 55px;
     margin-left: 40%;
     width: 280px;
 }

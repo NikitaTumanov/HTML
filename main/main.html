@@ -16,6 +16,62 @@
     <a href="../authorization/authorization.html" target="_blank">Авторизация</a>
 </div>
 
+
+<div class="slideshow-container">
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 4</div>
+        <img src="../general/change_1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 4</div>
+        <img src="../general/change_2.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 4</div>
+        <img src="../general/change_3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="../general/change_4.jpg" style="width:100%">
+    </div>
+</div>
+<div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+<script>
+    var slideIndex = 0;
+    showSlides();
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+</script>
+
+
+
+
+
+
+
+
     <div style="margin-left: 10%; margin-right: 10%; background: #25282d;">
     <div id="information">
         <div id="hello">Добро пожаловать на сайт для выбора самокатов</div>
@@ -39,19 +95,19 @@
             равновесие.Для новичков это вызывает некоторые проблемы при управлении этим средством
             передвижения. Важной особенностью исполнения самоката на двух колесах является то, что
             нет дополнительного места для размещения аккумуляторов. Они расположены под декой.</li><br>
-        <p class="photo"><img class="big" src="1.jpg"></p>
+        <p class="photo"><img class="big" src="../general/1.jpg"></p>
         <li><a href="#">Трехколесные электрические самокаты с двумя задними колесами.</a> Такая конструкция
             является более сложной и громоздкой, служащей для долгого и комфортного передвижения. Она уступает
             двухколесным моделям по габаритным размерам, но выигрывает в запасе хода и мощности.Конструкции с
             сиденьем и широкой декой можно использовать даже для поездок за городом. Многие модели электросамокатов
             снабжают маленьким дополнительным колесом для поддержки и разгрузки рамы.</li><br>
-        <p class="photo"><img class="big" src="2.jpg"></p>
+        <p class="photo"><img class="big" src="../general/2.jpg"></p>
         <li><a href="#">Трехколесные самокаты с двумя передними колесами.</a> Это малораспространенная и необычная
             конструкция. Для передвижения на таком электрическом самокате необходимо наличие специальных навыков
             вождения. Эта модель является гибридом Сигвея и электрического самоката.Преимуществом таких электросамокатов
             является повышенная маневренность. Минимальный комфорт во время езды можно отнести к их недостаткам.</li><br>
         <h2>По виду привода ведущих колес электрические самокаты делятся:</h2>
-        <p class="photo"><img class="big" src="3.jpg"></p>
+        <p class="photo"><img class="big" src="../general/3.jpg"></p>
         <li><a href="#">Цепной задний привод.</a> Электрический двигатель находится на раме, а крутящий момент передается
             на заднее колесо посредством металлической цепи.</li><br>
         <li><a href="#">Одинарный концентрированный привод.</a> Электродвигатель совместно с колесом составляют единый
