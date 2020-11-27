@@ -1,193 +1,37 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <script src="scripts/main.js"></script>
-    <title>Quiz</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial;
-            font-size: 17px;
-        }
-        #myVideo {
-            position: fixed;
-            right: 0;
-            bottom: 0;
-            min-width: 100%;
-            min-height: 100%;
-        }
-        #content3 {
-            position: fixed;
-            background: rgba(0, 0, 0, 0.5);
-            color: #f1f1f1;
-            left: 25%;
-            width: 60%;
-
-        }
-
-        #content2 {
-            position: fixed;
-            bottom:  0;
-            right: 0;
-            background: rgba(0, 0, 0, 0.5);
-            color: #f1f1f1;
-            width: 15%;
-            padding: 20px;
-        }
-        .center {
-            margin: auto;
-            width: 50%;
-            border: 3px solid green;
-            padding: 10px;
-        }
-        * {box-sizing: 100px; margin: 20;}
-        .widget {
-            position: fixed;
-            top:0 ;
-            left: 0;
-            background: rgba(0, 0, 0, 0.5);
-            color: #f1f1f1;
-            width: 20%;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.5);
-            border: 5px rgba(0, 0, 0, 0.5);
-            border-radius: 5px;
-            font-family: 'Roboto', sans-serif;
-        }
-
-        .widget h3 {
-            margin-bottom: 20px;
-            text-align: center;
-            font-size: 24px;
-            font-weight: normal;
-            color:  #424949;
-        }
-        .widget ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            width: 80%;
-        }
-        .widget li {
-            border-bottom: 1px solid #eaeaea;
-            width: 80%;
-            padding-bottom: 20%;
-            margin-bottom: 20%;
-        }
-        .widget li:last-child {
-            border-bottom: none;
-            margin-bottom: 5%;
-            padding-bottom: 5%;
-        }
-        .widget a {
-            text-decoration: none;
-            color: white;
-            display: inline-block;
-        }
-        .widget li:before {
-            font-family: FontAwesome;
-            font-size: 20px;
-            vertical-align:bottom;
-            color: #dd3333;
-            margin-right: 14px;
-        }
-        .round {
-            border-radius: 100px; /* Радиус скругления */
-            border: 1px solid azure; /* Параметры рамки */
-            box-shadow: 0 0 7px #666; /* Параметры тени */
-        }
-
-        .content {
-            position: fixed;
-            top:  0;
-            background: rgba(0, 0, 0, 0.5);
-            color: #f1f1f1;
-            width: 20%;
-            height: 100%;
-            padding: 20px;
-        }
-
-
-
-
-        .question {
-            text-align: center;
-            font-size: 1em;
-        }
-        .questionNumber {
-            text-align: center;
-            padding: 1em;
-            font-size: 1.5em;
-        }
-
-        .button{
-            position: relative;
-            display:inline-block;
-            width:80%;
-            display: inline-block;
-            color: black;
-            font-weight: 700;
-            text-decoration: none;
-            user-select: none;
-            padding: .5em 2em;
-            outline: none;
-            border: 2px solid;
-            border-radius: 1px;
-            transition: 0.2s;
-
-        }
-        .responsive {
-            width: 100%;
-            max-width: 400px;
-            height: auto;
-        }
-        .button:hover { background: rgba(255,255,255,.2); }
-        .button:active { background: white; }
-        }
-
-        .widget li:nth-child(1):before {content:"\f1fc";}
-        .widget li:nth-child(2):before {content:"\f0d0";}
-        .widget li:nth-child(3):before {content:"\f0cd";}
-        .widget li:nth-child(4):before {content:"\f028";}
-        .widget li:nth-child(5):before {content:"\f03d";}
-
-    </style>
+    <title>Приветствие</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="test.css" media="screen" type="text/css"/>
+    <link rel="stylesheet" href="../general/general.css" media="screen" type="text/css" />
+    <link rel="icon" href="../general/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../general/favicon.png" type="image/x-icon">
 </head>
 <body>
-
-<video autoplay muted loop id="myVideo">
-    <source src="img/video.mp4" type="video/mp4">
-    Your browser does not support HTML5 video.
-</video>
-
-<div class="widget">
-    <center>
-        <h3>Меню</h3>
-
-        <ul >
-            <li><a href="main.html">тест на знание футбола</a></li>
-            <li><a href="">Таблицы</a></li>
-            <li><a href="">Матчи онлайн</a></li>
-            <li><a href="pract_1.html">Команда недели </a></li>
-            <li><a href="">Видео</a></li>
-        </ul>
-
-    </center>
+<div class="vladmaxi-top">
+    <a href="../main/main.html">На главную</a>
+    <a href="../catalog/catalog.html">Каталог</a>
+    <a style="background: #d44179;" href="../test/test.html">Тест</a>
+    <a style="float: right;" href="../authorization/authorization.html" target="_blank">Авторизация</a>
 </div>
+
+
+<script src="test.js"></script>
 <div id="content3">
     <h1 class="score"></h1>
+    <div class="button_end" style="display: inline-block">
+        <button onClick='location.href="test.html"' id="knopka_1" style="display: none">Повторить попытку</button>
+    </div>
     <div class="header">
         <h1 class="questionNumber"></h1>
         <h2 class="question"></h2>
-        <center>
+        <div style="text-align: center;">
             <img id="pict" class="responsive" width="600" height="600">
-        </center>
+        </div>
     </div>
-    <center>
+    <div style="text-align: center;">
         <button id="button1" class="button" onclick="myFunction1()"></button>
         <button id="button2" class="button" onclick="myFunction2()"></button>
         <button id="button3" class="button" onclick="myFunction3()"></button>
@@ -195,8 +39,7 @@
         <button id="next" class="button" style="margin:15px;
     color: white; " onclick="next()">Следующий вопрос &raquo</button>
         <div class="numero_counting_wrapper">
-    </center>
-    <div class="numero_shape"></div>
+    </div>
 </div>
 </div>
 </body>

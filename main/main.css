@@ -1,12 +1,15 @@
-body{
-    background-image: url(../general/background.jpg);
-    color: aliceblue;
-    text-align: center;
-    background-repeat: repeat;
-}
-
 #hello{
     text-align: center;
+    font-size: 40px;
+}
+
+@media only screen and (min-width: 890px){
+    h2{font-size: 2vw}
+    body{font-size: 1.5vw}
+}
+@media only screen and (max-width: 890px){
+    h2{font-size: 1.5vh}
+    body{font-size: 2.5vw}
 }
 
 li {
@@ -15,14 +18,18 @@ li {
 li span {
     color: #d44179;
 }
+
 A {
     color: #d44179; /* Цвет ссылок */
+    text-decoration: underline;
 }
 A:visited {
     color: #d44179; /* Цвет посещенных ссылок */
+    text-decoration: underline;
 }
 A:active {
     color: #6a00ff; /* Цвет активных ссылок */
+    text-decoration: underline;
 }
 
 #information{
@@ -36,16 +43,16 @@ A:active {
 }
 img.big {cursor: pointer; max-width: 150px;text-align: center;}
 img.big:hover {
-    max-width: 40%;
+    max-width: 100%;
     text-align: center;
     box-shadow: 0 0 0 1px #cccccc,
     0 -20px 10px -5px #8df596,
     20px 0 10px -5px #8bffde,
     0 20px 10px -5px #fdc6d3,
     -20px 0 10px -5px #efffc9;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    transition: all 0.7s ease;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    transition: all 2s ease;
 }
 
 button {
@@ -124,17 +131,6 @@ img {vertical-align: middle;}
     padding: 8px 12px;
     position: absolute;
     top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #d44179;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
 }
 
 .active {

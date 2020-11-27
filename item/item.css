@@ -1,0 +1,24 @@
+#item{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 50px;
+    background: #25282d;
+    border-radius: 40px 10px;
+}
+
+#item DIV {
+    margin-top: 25px;
+    text-align: left; /* Выравнивание по центру */
+    display: inline-block; /* Строчно-блочный элемент */
+    vertical-align: top; /* Выравнивание по верхнему краю */
+}
+
+.photo{
+    width: 50%;
+    border-radius: 10px 10px;
+}
+
+.information{
+    margin-left: 25px;
+    margin-right: 25px;
+}

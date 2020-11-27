@@ -1,118 +1,38 @@
-<!doctype html>
-<html lang="ru">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Fun Particles</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-    <div class="vladmaxi-top">
-        <a href="../main/main.html" target="_blank">Вернуться на главную</a>
-    </div>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
 
-    <div id="login">
-        <div class="head">Авторизация</div><br>
-        <form action="javascript:void(0);" method="get">
-            <fieldset class="clearfix">
-                <p><span class="fontawesome-user"></span><input type="text" value="Логин" onBlur="if(this.value == '') this.value = 'Логин'" onFocus="if(this.value == 'Логин') this.value = ''" required></p> <!-- JS because of IE support; better: placeholder="Username" -->
-                <p><span class="fontawesome-lock"></span><input type="password" value="Пароль" onBlur="if(this.value == '') this.value = 'Пароль'" onFocus="if(this.value == 'Пароль') this.value = ''" required></p> <!-- JS because of IE support; better: placeholder="Password" -->
-                <p><input type="submit" value="ВОЙТИ"></p>
-            </fieldset>
-        </form>
-        <p>Нет аккаунта? &nbsp;&nbsp;<a href="../item/item.html">Регистрация</a><span class="fontawesome-arrow-right"></span></p>
-    </div>
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+</div>
 
-        <script src="../authorization/sketch.min.js"></script>
-        <script>
-        function Particle( x, y, radius ) {
-            this.init( x, y, radius );
-        }
-        Particle.prototype = {
-            init: function( x, y, radius ) {
-                this.alive = true;
-                this.radius = radius || 10;
-                this.wander = 0.15;
-                this.theta = random( TWO_PI );
-                this.drag = 0.92;
-                this.color = '#fff';
-                this.x = x || 0.0;
-                this.y = y || 0.0;
-                this.vx = 0.0;
-                this.vy = 0.0;
-            },
-            move: function() {
-                this.x += this.vx;
-                this.y += this.vy;
-                this.vx *= this.drag;
-                this.vy *= this.drag;
-                this.theta += random( -0.5, 0.5 ) * this.wander;
-                this.vx += sin( this.theta ) * 0.1;
-                this.vy += cos( this.theta ) * 0.1;
-                this.radius *= 0.96;
-                this.alive = this.radius > 0.5;
-            },
-            draw: function( ctx ) {
+<div id="main">
+    <h2>Sidenav Push Example</h2>
+    <p>Click on the element below to open the side navigation menu, and push this content to the right. Notice that we add a black see-through background-color to body when the sidenav is opened.</p>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+</div>
 
-                ctx.beginPath();
-                ctx.arc( this.x, this.y, this.radius, 0, TWO_PI );
-                ctx.fillStyle = this.color;
-                ctx.fill();
-            }
-        };
-        var MAX_PARTICLES = 280;
-        var COLOURS = [ '#69D2E7', '#A7DBD8', '#E0E4CC', '#F38630', '#FA6900', '#FF4E50', '#F9D423' ];
-        var particles = [];
-        var pool = [];
-        var demo = Sketch.create({
-            container: document.getElementById( 'container' ),
-            retina: 'auto'
-        });
-        demo.setup = function() {
-            var i, x, y;
-            for ( i = 0; i < 20; i++ ) {
-                x = ( demo.width * 0.5 ) + random( -100, 100 );
-                y = ( demo.height * 0.5 ) + random( -100, 100 );
-                demo.spawn( x, y );
-            }
-        };
-        demo.spawn = function( x, y ) {
-            var particle, theta, force;
-            if ( particles.length >= MAX_PARTICLES )
-                pool.push( particles.shift() );
-            particle = pool.length ? pool.pop() : new Particle();
-            particle.init( x, y, random( 5, 40 ) );
-            particle.wander = random( 0.5, 2.0 );
-            particle.color = random( COLOURS );
-            particle.drag = random( 0.9, 0.99 );
-            theta = random( TWO_PI );
-            force = random( 2, 8 );
-            particle.vx = sin( theta ) * force;
-            particle.vy = cos( theta ) * force;
-            particles.push( particle );
-        };
-        demo.update = function() {
-            var i, particle;
-            for ( i = particles.length - 1; i >= 0; i-- ) {
-                particle = particles[i];
-                if ( particle.alive ) particle.move();
-                else pool.push( particles.splice( i, 1 )[0] );
-            }
-        };
-        demo.draw = function() {
-            demo.globalCompositeOperation  = 'lighter';
-            for ( var i = particles.length - 1; i >= 0; i-- ) {
-                particles[i].draw( demo );
-            }
-        };
-        demo.mousemove = function() {
-            var particle, theta, force, touch, max, i, j, n;
-            for ( i = 0, n = demo.touches.length; i < n; i++ ) {
-                touch = demo.touches[i], max = random( 1, 4 );
-                for ( j = 0; j < max; j++ ) {
-                  demo.spawn( touch.x, touch.y );
-                }
-            }
-        };
-        </script>
-    </body>
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+        document.body.style.backgroundColor = "white";
+    }
+</script>
+
+</body>
+
 </html>

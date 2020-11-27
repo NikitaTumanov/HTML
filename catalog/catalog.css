@@ -1,0 +1,71 @@
+ul#menu, ul#menu ul {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    width: 250px;
+}
+
+ul#menu a,ul#menu span { display: block; text-decoration: none; }
+
+ul#menu li { margin-top: 1px; }
+
+ul#menu li a,ul#menu li span {
+    background: #333333;
+    color: #FFFFFF;
+    padding: 7px;
+}
+
+ul#menu li a:hover,ul#menu li span:hover { background: #000000; }
+
+ul#menu li ul li a {
+    background: #CCCCCC;
+    color: #000000;
+    padding-left: 20px;
+}
+
+ul#menu li ul li a:hover {
+    background: #AAAAAA;
+    border-left: 5px #000000 solid;
+    padding-left: 15px;
+}
+
+@media only screen and (min-width: 880px){
+    #catalog A{font-size: 1.5vw;}
+    #catalog A:visited{font-size: 1.5vw;}
+    #catalog A:active{font-size: 1.5vw;}
+    #catalog SPAN {font-size: 3vw;}
+    #menu{font-size: 1.5vw;}
+}
+@media only screen and (max-width: 880px){
+    #catalog A{font-size: 1.5vh;}
+    #catalog A:visited{font-size: 1.5vh;}
+    #catalog A:active{font-size: 1.5vh;}
+    #catalog SPAN {font-size: 2vh;}
+    #menu{font-size: 1.5vh;}
+}
+
+#catalog{
+    background: #25282d;}
+#catalog A {
+    color: #d44179; /* Цвет ссылок */
+    text-decoration: underline;
+}
+#catalog A:visited {
+    color: #d44179; /* Цвет посещенных ссылок */
+    text-decoration: underline;
+}
+#catalog A:active {
+    color: #6a00ff; /* Цвет активных ссылок */
+    text-decoration: underline;
+}
+#catalog A:hover { color: #1fa0e2; }
+#catalog DIV {
+    width: 350px; /* Ширина */
+    height: auto;
+    margin: 0 5px 15px 0; /* Отступы */
+    text-align: center; /* Выравнивание по центру */
+    display: inline-block; /* Строчно-блочный элемент */
+    vertical-align: top; /* Выравнивание по верхнему краю */
+}
+#catalog P { margin: 0 5px; }
+#catalog SPAN { color: #eeeeee;}

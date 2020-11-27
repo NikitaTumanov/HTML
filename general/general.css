@@ -1,6 +1,24 @@
+body{
+    background-image: url(../general/textura.png);
+    color: aliceblue;
+    text-align: center;
+    background-repeat: repeat;
+
+}
+
+@media only screen and (min-width: 450px){
+    .vladmaxi-top{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 450px){
+    .vladmaxi-top{
+        font-size: 7.6px;
+    }
+}
+
 .vladmaxi-top{
     line-height: 24px;
-    font-size: 11px;
     background: #eee;
     text-transform: uppercase;
     z-index: 9999;
@@ -9,7 +27,6 @@
     left:0;
     width:100%;
     font-family: calibri;
-    font-size: 13px;
     box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
     -webkit-animation: slideOut 0.5s ease-in-out 0.3s backwards;
 }
@@ -19,15 +36,17 @@
 }
 
 .vladmaxi-top a{
+    text-decoration: none;
+    border: 4px double #d44179;
     padding: 0px 10px;
     letter-spacing: 1px;
     color: #333;
-    text-shadow: 0px 1px 1px #fff;
+    text-shadow: 0px 1px 1px #d44179;
     display: block;
     float: left;
 }
 .vladmaxi-top a:hover{
-    background: #fff;
+    background: #d44179;
 }
 .vladmaxi-top span.right{
     float: right;
@@ -35,4 +54,8 @@
 .vladmaxi-top span.right a{
     float: left;
     display: block;
+}
+
+body img{
+    border-radius: 10px 10px;
 }

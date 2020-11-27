@@ -2,7 +2,8 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Авторизация</title>
+    <title>Каталог</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="catalog.css" media="screen" type="text/css" />
     <link rel="stylesheet" href="../general/general.css" media="screen" type="text/css" />
     <link rel="icon" href="../general/favicon.png" type="image/x-icon">
@@ -11,11 +12,96 @@
 <body>
 <div class="vladmaxi-top">
     <a href="../main/main.html">На главную</a>
-    <a href="../catalog/catalog.html">Каталог</a>
+    <a style="background: #d44179;" href="../catalog/catalog.html">Каталог</a>
     <a href="../test/test.html">Тест</a>
-    <a href="../authorization/authorization.html" target="_blank">Авторизация</a>
+    <a style="float: right;" href="../authorization/authorization.html" target="_blank">Авторизация</a>
+</div>
+<script src="../item/item.js"></script>
+<h1 style="color:black; font-size:5vw; margin-left: 25%; margin-right: 20%; margin-top: 25px;">Выбери свой самокат</h1>
+<div>
+<div style="display: inline-block; vertical-align: top">
+    <ul id="menu">
+        <li><span>Двухколесные электросамокаты</span>
+            <ul>
+                <li><a href="#" id="0" onclick="open(this.id)">Freego F6 250w</a></li>
+                <li><a href="#">Booster S3 350w</a></li>
+                <li><a href="#">Bikelectro Rover DS 1000w</a></li>
+            </ul>
+        </li>
+        <li><span>Трехколесные электрические самокаты с двумя задними колесами</span>
+            <ul>
+                <li><a href="#">HEADWAY T6M-3 350w</a></li>
+                <li><a href="#">HEADWAY DYNA L2 300w</a></li>
+                <li><a href="#">HEADWAY BL-350 TRIO</a></li>
+            </ul>
+        </li>
+        <li><span>Трехколесные самокаты с двумя передними колесами</span>
+            <ul>
+                <li><a href="#">ES-board 450w</a></li>
+                <li><a href="#">Eltreco Scuddy 250w</a></li>
+                <li><a href="#">Doohan iLark 300W</a></li>
+            </ul>
+        </li>
+    </ul>
+    <script src="../general/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#menu ul").hide();
+            $("#menu li span").click(function() {
+                $("#menu ul:visible").slideUp("normal");
+                if (($(this).next().is("ul")) && (!$(this).next().is(":visible"))) {
+                    $(this).next().slideDown("normal");
+                }
+            });
+        });
+    </script>
+    <br>
 </div>
 
 
+<div style="display: inline-block; width: 75%">
+    <div id="catalog">
+        <p><span id="wheel_11">Двухколесные электросамокаты</span></p>
+        <div>
+            <p><img src="../item/Freego%20F6.PNG" width="100%" alt="" /></p>
+            <p><a href="#">Freego F6 250w</a></p>
+        </div>
+        <div>
+            <p><img src="../item/Booster%20S3.PNG" width="100%" alt="" /></p>
+            <p><a href="#">Booster S3 350w</a></p>
+        </div>
+        <div>
+            <p><img src="../item/Bikelectro%20Rover%20DS.PNG" width="100%" alt="" /></p>
+            <p><a href="#">Bikelectro Rover DS 1000w</a></p>
+        </div>
+        <p><span id="wheel_21">Трехколесные электрические самокаты с двумя задними колесами</span></p>
+        <div>
+            <p><img src="../item/HEADWAY%20T6M-3.PNG" width="100%" alt="" /></p>
+            <p><a href="#">HEADWAY T6M-3 350w</a></p>
+        </div>
+        <div>
+            <p><img src="../item/HEADWAY%20DYNA%20L2.PNG" width="100%" alt="" /></p>
+            <p><a href="#">HEADWAY DYNA L2 300w</a></p>
+        </div>
+        <div>
+            <p><img src="../item/HEADWAY%20BL-350%20TRIO.PNG" width="100%" alt="" /></p>
+            <p><a href="#">HEADWAY BL-350 TRIO</a></p>
+        </div>
+        <p><span id="wheel_12">Трехколесные самокаты с двумя передними колесами</span></p>
+            <div>
+                <p><img src="../item/ES-board.PNG" width="100%" alt="" /></p>
+                <p><a href="#">ES-board 450w</a></p>
+            </div>
+            <div>
+                <p><img src="../item/Eltreco%20Scuddy.PNG" width="100%" alt="" /></p>
+                <p><a href="#">Eltreco Scuddy 250w</a></p>
+            </div>
+            <div>
+                <p><img src="../item/Doohan%20iLark.PNG" width="100%" alt="" /></p>
+                <p><a href="#">Doohan iLark 300W</a></p>
+            </div>
+    </div>
+</div>
+</div>
 </body>
 </html>

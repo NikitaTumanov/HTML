@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Авторизация</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="authorization.css" media="screen" type="text/css" />
-    <link rel="stylesheet" href="../general/general.css" media="screen" type="text/css" />
     <link rel="icon" href="../general/favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="../general/favicon.png" type="image/x-icon">
 </head>
@@ -13,7 +13,7 @@
     <a href="../main/main.html">На главную</a>
     <a href="../catalog/catalog.html">Каталог</a>
     <a href="../test/test.html">Тест</a>
-    <a href="../authorization/authorization.html">Авторизация</a>
+    <a style="background: #d44179; float: right;" href="../authorization/authorization.html">Авторизация</a>
 </div>
 
 <div id="login">
@@ -22,7 +22,7 @@
         <fieldset class="clearfix">
             <p><span class="fontawesome-user"></span><input type="text" value="Логин" onBlur="if(this.value == '') this.value = 'Логин'" onFocus="if(this.value == 'Логин') this.value = ''" required></p> <!-- JS because of IE support; better: placeholder="Username" -->
             <p><span class="fontawesome-lock"></span><input type="password" value="Пароль" onBlur="if(this.value == '') this.value = 'Пароль'" onFocus="if(this.value == 'Пароль') this.value = ''" required></p> <!-- JS because of IE support; better: placeholder="Password" -->
-            <p><input type="submit" value="ВОЙТИ"></p>
+            <p><input onClick='location.href="../catalog/catalog.html"' type="submit" value="ВОЙТИ"></p>
         </fieldset>
     </form>
     <p><span class="fontawesome-arrow-down"></span><a> Наслаждайтесь</a><span class="fontawesome-arrow-down"></span></p>
@@ -66,7 +66,7 @@
         }
     };
     var MAX_PARTICLES = 280;
-    var COLOURS = [ '#69D2E7', '#A7DBD8', '#E0E4CC', '#F38630', '#FA6900', '#FF4E50', '#F9D423' ];
+    var COLOURS = [ '#e0c14c', '#5bd67f', '#b958cf', '#d4415e', '#FA6900', '#FF4E50', '#F9D423' ];
     var particles = [];
     var pool = [];
     var demo = Sketch.create({
