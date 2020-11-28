@@ -22,53 +22,53 @@ var y = 1;
 var score = 0;
 function colorit(){
     if(content[x]['correct']===0){
-        document.getElementById("button1").style.backgroundColor = "MediumSpringGreen";
-        document.getElementById("button2").style.backgroundColor = "red";
-        document.getElementById("button3").style.backgroundColor = "red";
-        document.getElementById("button4").style.backgroundColor = "red";
+        document.getElementById("button1").style.backgroundColor = "green";
+        document.getElementById("button2").style.backgroundColor = "Crimson";
+        document.getElementById("button3").style.backgroundColor = "Crimson";
+        document.getElementById("button4").style.backgroundColor = "Crimson";
     }
     if(content[x]['correct']===1){
-        document.getElementById("button1").style.backgroundColor = "red";
-        document.getElementById("button2").style.backgroundColor = "MediumSpringGreen";
-        document.getElementById("button3").style.backgroundColor = "red";
-        document.getElementById("button4").style.backgroundColor = "red";
+        document.getElementById("button1").style.backgroundColor = "Crimson";
+        document.getElementById("button2").style.backgroundColor = "green";
+        document.getElementById("button3").style.backgroundColor = "Crimson";
+        document.getElementById("button4").style.backgroundColor = "Crimson";
     }
     if(content[x]['correct']===2){
-        document.getElementById("button1").style.backgroundColor = "red";
-        document.getElementById("button2").style.backgroundColor = "red";
-        document.getElementById("button3").style.backgroundColor = "MediumSpringGreen";
-        document.getElementById("button4").style.backgroundColor = "red";
+        document.getElementById("button1").style.backgroundColor = "Crimson";
+        document.getElementById("button2").style.backgroundColor = "Crimson";
+        document.getElementById("button3").style.backgroundColor = "green";
+        document.getElementById("button4").style.backgroundColor = "Crimson";
     }
     if(content[x]['correct']===3){
-        document.getElementById("button1").style.backgroundColor = "red";
-        document.getElementById("button2").style.backgroundColor = "red";
-        document.getElementById("button3").style.backgroundColor = "red";
-        document.getElementById("button4").style.backgroundColor = "MediumSpringGreen";
+        document.getElementById("button1").style.backgroundColor = "Crimson";
+        document.getElementById("button2").style.backgroundColor = "Crimson";
+        document.getElementById("button3").style.backgroundColor = "Crimson";
+        document.getElementById("button4").style.backgroundColor = "green";
     }
     document.getElementById("next").style.backgroundColor="SteelBlue";
     document.getElementById("next").disabled = false;
 }
 function myFunction1() {
-    if(content[x]['correct']===0 && document.getElementById("button1").style.backgroundColor ==="LightSlateGrey"){
+    if(content[x]['correct']===0 && document.getElementById("button1").style.backgroundColor ==="white"){
         score++;
     }
     colorit();
 }
 function myFunction2() {
-    if(content[x]['correct']===1 && document.getElementById("button2").style.backgroundColor ==="LightSlateGrey"){
+    if(content[x]['correct']===1 && document.getElementById("button2").style.backgroundColor ==="white"){
         score++;
     }
     colorit();
 }
 function myFunction3() {
-    if(content[x]['correct']===2 && document.getElementById("button3").style.backgroundColor ==="LightSlateGrey"){
+    if(content[x]['correct']===2 && document.getElementById("button3").style.backgroundColor ==="white"){
         score++;
     }
     colorit();
 
 }
 function myFunction4() {
-    if(content[x]['correct']===3 && document.getElementById("button4").style.backgroundColor ==="LightSlateGrey"){
+    if(content[x]['correct']===3 && document.getElementById("button4").style.backgroundColor ==="white"){
         score++;
     }
     colorit();
@@ -101,11 +101,11 @@ function choices() {
         var question = document.querySelector('.question');
         question.textContent = content[x]['question'];
         document.getElementById("pict").src= content[x]['picture'];
-        document.getElementById("button1").style.backgroundColor = "LightSlateGrey";
-        document.getElementById("button2").style.backgroundColor = "LightSlateGrey";
-        document.getElementById("button3").style.backgroundColor = "LightSlateGrey";
-        document.getElementById("button4").style.backgroundColor = "LightSlateGrey";
-        document.getElementById("next").style.backgroundColor="red";
+        document.getElementById("button1").style.backgroundColor = "white";
+        document.getElementById("button2").style.backgroundColor = "white";
+        document.getElementById("button3").style.backgroundColor = "white";
+        document.getElementById("button4").style.backgroundColor = "white";
+        document.getElementById("next").style.backgroundColor="DarkRed";
         document.getElementById("next").disabled = true;
         document.getElementById("button1").innerText=content[x]['choices'][0];
         document.getElementById("button2").innerText=content[x]['choices'][1];
