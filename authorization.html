@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <title>Авторизация</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="authorization.css" media="screen" type="text/css" />
-    <link rel="icon" href="../general/favicon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="../general/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="authorization/authorization.css" media="screen" type="text/css" />
+    <link rel="icon" href="general/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="general/favicon.png" type="image/x-icon">
 </head>
 <body>
 <div class="vladmaxi-top">
-    <a href="../main.html">На главную</a>
-    <a href="../catalog/catalog.html">Каталог</a>
-    <a href="../test/test.html">Тест</a>
-    <a style="background: #d44179; float: right;" href="../authorization/authorization.html">Авторизация</a>
+    <a href="main.html">На главную</a>
+    <a href="catalog.html">Каталог</a>
+    <a href="test.html">Тест</a>
+    <a style="background: #d44179; float: right;" href="authorization.html">Авторизация</a>
 </div>
 
 <div id="login">
@@ -22,13 +22,13 @@
         <fieldset class="clearfix">
             <p><span class="fontawesome-user"></span><input type="text" value="Логин" onBlur="if(this.value == '') this.value = 'Логин'" onFocus="if(this.value == 'Логин') this.value = ''" required></p> <!-- JS because of IE support; better: placeholder="Username" -->
             <p><span class="fontawesome-lock"></span><input type="password" value="Пароль" onBlur="if(this.value == '') this.value = 'Пароль'" onFocus="if(this.value == 'Пароль') this.value = ''" required></p> <!-- JS because of IE support; better: placeholder="Password" -->
-            <p><input onClick='location.href="../catalog/catalog.html"' type="submit" value="ВОЙТИ"></p>
+            <p><input onClick='location.href="catalog.html"' type="submit" value="ВОЙТИ"></p>
         </fieldset>
     </form>
     <p><span class="fontawesome-arrow-down"></span><a> Наслаждайтесь</a><span class="fontawesome-arrow-down"></span></p>
 </div>
 
-<script src="sketch.min.js"></script>
+<script src="authorization/sketch.min.js"></script>
 <script>
     function Particle( x, y, radius ) {
         this.init( x, y, radius );
