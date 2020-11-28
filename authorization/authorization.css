@@ -4,7 +4,7 @@
 @font-face {
     font-family: 'FontAwesome';
     font-style: normal;
-    font-weight: normal;++
+    font-weight: normal;
     src: url('https://weloveiconfonts.com/api/fonts/fontawesome/fontawesome-webfont.eot');
     src: url('https://weloveiconfonts.com/api/fonts/fontawesome/fontawesome-webfont.eot?#iefix') format('eot'),
     url('https://weloveiconfonts.com/api/fonts/fontawesome/fontawesome-webfont.woff') format('woff'),
@@ -61,6 +61,7 @@ p {
     #login {
         align-content: center;
         margin-left: 0;
+        float: left;
     }
 }
 
@@ -78,9 +79,9 @@ p {
 
 #login form span {
     background-color: #363b41;
-    border-radius: 3px 0px 0px 3px;
-    -moz-border-radius: 3px 0px 0px 3px;
-    -webkit-border-radius: 3px 0px 0px 3px;
+    border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    -webkit-border-radius: 3px 0 0 3px;
     color: #a2a5a7;
     display: block;
     float: left;
