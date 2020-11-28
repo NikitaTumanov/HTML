@@ -40,8 +40,9 @@ A:active {
 
 .photo {
     text-align: center;
+    margin-bottom: 45px;
 }
-img.big {cursor: pointer; max-width: 150px;text-align: center;}
+img.big {cursor: pointer; max-width: 250px;text-align: center;}
 img.big:hover {
     max-width: 100%;
     text-align: center;
@@ -107,7 +108,8 @@ body {font-family: Verdana, sans-serif;}
 img {vertical-align: middle;}
 
 /* Slideshow container */
-.slideshow-container {
+.slideshow-container img {
+    border-radius: 0 0;
     max-width: 1000px;
     position: relative;
     margin: auto;

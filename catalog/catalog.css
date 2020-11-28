@@ -69,3 +69,11 @@ ul#menu li ul li a:hover {
 }
 #catalog P { margin: 0 5px; }
 #catalog SPAN { color: #eeeeee;}
+
+@media only screen and (max-width: 480px){
+    #catalog img{
+        width: 60%;
+    }
+    #catalog DIV{
+    }
+}

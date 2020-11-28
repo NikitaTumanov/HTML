@@ -57,8 +57,13 @@ p {
 
 /* ---------- LOGIN ---------- */
 
-#login {
+@media only screen and (max-width: 480px){
+    #login {
+        margin-right: 50px;
+    }
+}
 
+#login {
     margin-top: 55px;
     margin-left: 40%;
     width: 280px;
