@@ -21,6 +21,12 @@
     }
 }
 
+@media only screen and (max-width: 890px){
+    .question {
+        font-size: 1.5vh;
+    }
+}
+
 .question {
     text-align: center;
 }

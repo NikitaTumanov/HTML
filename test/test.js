@@ -49,26 +49,26 @@ function colorit(){
     document.getElementById("next").disabled = false;
 }
 function myFunction1() {
-    if(content[x]['correct']===0){
+    if(content[x]['correct']===0 && document.getElementById("button1").style.backgroundColor ==="white"){
         score++;
     }
     colorit();
 }
 function myFunction2() {
-    if(content[x]['correct']===1){
+    if(content[x]['correct']===1 && document.getElementById("button2").style.backgroundColor ==="white"){
         score++;
     }
     colorit();
 }
 function myFunction3() {
-    if(content[x]['correct']===2){
+    if(content[x]['correct']===2 && document.getElementById("button3").style.backgroundColor ==="white"){
         score++;
     }
     colorit();
 
 }
 function myFunction4() {
-    if(content[x]['correct']===3){
+    if(content[x]['correct']===3 && document.getElementById("button4").style.backgroundColor ==="white"){
         score++;
     }
     colorit();

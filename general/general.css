@@ -16,6 +16,11 @@ body{
         font-size: 7.6px;
     }
 }
+@media only screen and (max-width: 281px){
+    .vladmaxi-top{
+        font-size: 6px;
+    }
+}
 
 .vladmaxi-top{
     line-height: 24px;
