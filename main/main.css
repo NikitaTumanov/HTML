@@ -43,6 +43,10 @@ A:active {
     text-align: center;
     margin-bottom: 45px;
 }
+
+@media only screen and (max-width: 480px){
+    img.big{max-width: 150px; width: 150px}
+}
 img.big {cursor: pointer; max-width: 250px;text-align: center;}
 img.big:hover {
     max-width: 100%;

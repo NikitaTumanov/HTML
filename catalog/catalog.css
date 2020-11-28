@@ -75,5 +75,8 @@ ul#menu li ul li a:hover {
         width: 60%;
     }
     #catalog DIV{
+        width: 180px;
+        margin: 0 5px 0 0;
+        align-content: center;
     }
 }
