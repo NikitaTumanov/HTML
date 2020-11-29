@@ -9,16 +9,19 @@
 #item DIV {
     margin-top: 25px;
     text-align: left; /* Выравнивание по центру */
-    display: inline-block; /* Строчно-блочный элемент */
     vertical-align: top; /* Выравнивание по верхнему краю */
 }
 
 .photo{
-    width: 50%;
+    margin: 45px 25px 25px 25px;
     border-radius: 10px 10px;
 }
 
 .information{
     margin-left: 25px;
     margin-right: 25px;
+}
+
+.photo img{
+    width: 100%;
 }
