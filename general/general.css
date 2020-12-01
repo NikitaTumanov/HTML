@@ -7,22 +7,22 @@ body{
 }
 
 @media only screen and (min-width: 450px){
-    .vladmaxi-top{
+    .top{
         font-size: 16px;
     }
 }
 @media only screen and (max-width: 450px){
-    .vladmaxi-top{
+    .top{
         font-size: 7.6px;
     }
 }
 @media only screen and (max-width: 281px){
-    .vladmaxi-top{
+    .top{
         font-size: 6px;
     }
 }
 
-.vladmaxi-top{
+.top{
     line-height: 24px;
     background: #eee;
     text-transform: uppercase;
@@ -40,7 +40,7 @@ body{
     100%{top:0px; opacity: 1;}
 }
 
-.vladmaxi-top a{
+.top a{
     text-decoration: none;
     border: 4px double #d44179;
     padding: 0px 10px;
@@ -50,13 +50,13 @@ body{
     display: block;
     float: left;
 }
-.vladmaxi-top a:hover{
+.top a:hover{
     background: #d44179;
 }
-.vladmaxi-top span.right{
+.top span.right{
     float: right;
 }
-.vladmaxi-top span.right a{
+.top span.right a{
     float: left;
     display: block;
 }
