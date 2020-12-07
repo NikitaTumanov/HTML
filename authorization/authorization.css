@@ -57,13 +57,13 @@ p {
 
 /* ---------- LOGIN ---------- */
 
-@media only screen and (max-width: 480px){
+/*@media only screen and (max-width: 480px){
     #login {
         align-content: center;
         margin-left: 0;
         float: left;
     }
-}
+}*/
 
 #login {
     margin-top: 55px;
