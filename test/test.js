@@ -85,17 +85,9 @@ function choices() {
         document.querySelector('#content3').style.height="20%";
         document.querySelector('#content3').style.top="40%";
         document.getElementById("knopka_1").style.display='block';
-        if(score >= 4){
-            document.querySelector('.score').textContent =name+'Ваш счет: ' + score + ' из 6';
-        }
-        if (score < 4){
-            document.querySelector('.score').textContent = name+'Ваш счет: ' + score + ' из 6';
-        }
-        if (score === 0){
-            document.querySelector('.score').textContent = name+'Ваш счет: ' + score + ' из 6';
-        }
-
-    } else {
+        document.querySelector('.score').textContent =name+'Ваш счет: ' + score + ' из 6';
+    }
+    else {
         var questionNumber = document.querySelector('.questionNumber');
         questionNumber.textContent = 'Вопрос#' + y;
         var question = document.querySelector('.question');
