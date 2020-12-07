@@ -47,25 +47,25 @@ ul#menu li ul li a:hover {
 #catalog{
     background: #25282d;}
 #catalog A {
-    color: #d44179; /* Цвет ссылок */
+    color: #d44179;
     text-decoration: underline;
 }
 #catalog A:visited {
-    color: #d44179; /* Цвет посещенных ссылок */
+    color: #d44179;
     text-decoration: underline;
 }
 #catalog A:active {
-    color: #6a00ff; /* Цвет активных ссылок */
+    color: #6a00ff;
     text-decoration: underline;
 }
 #catalog A:hover { color: #1fa0e2; }
 #catalog DIV {
-    width: 350px; /* Ширина */
+    width: 350px;
     height: auto;
-    margin: 0 5px 15px 0; /* Отступы */
-    text-align: center; /* Выравнивание по центру */
-    display: inline-block; /* Строчно-блочный элемент */
-    vertical-align: top; /* Выравнивание по верхнему краю */
+    margin: 0 5px 15px 0;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
 }
 #catalog P { margin: 0 5px; }
 #catalog SPAN { color: #eeeeee;}

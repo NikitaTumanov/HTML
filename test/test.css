@@ -113,9 +113,9 @@
     margin-right: 14px;
 }
 .round {
-    border-radius: 100px; /* Радиус скругления */
-    border: 1px solid azure; /* Параметры рамки */
-    box-shadow: 0 0 7px #666; /* Параметры тени */
+    border-radius: 100px;
+    border: 1px solid azure;
+    box-shadow: 0 0 7px #666;
 }
 
 .content {
@@ -159,7 +159,7 @@
 .widget li:nth-child(5):before {content:"\f03d";}
 
 #knopka_1 {
-    background-color: #4CAF50; /* Green */
+    background-color: #4CAF50;
     border: none;
     color: white;
     padding: 16px 32px;
@@ -168,7 +168,7 @@
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
     cursor: pointer;
     border-radius: 40px 40px;
