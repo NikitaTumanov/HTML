@@ -1,2 +1,2 @@
 # Туманов Никита ИКБО-01-19
-HTML
+https://nikitatumanov.github.io/cursovaya/main.html
