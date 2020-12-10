@@ -80,3 +80,23 @@ ul#menu li ul li a:hover {
         align-content: center;
     }
 }
+
+h1 {
+    -webkit-animation: h1 2s linear infinite;
+    animation: h1 2s linear infinite;
+    color:black;
+    font-size:5vw;
+    margin-left: 25%;
+    margin-right: 20%;
+    margin-top: 35px;
+}
+@-webkit-keyframes h1 {
+    0% { color: rgba(34, 34, 34, 1); }
+    50% { color: rgba(34, 34, 34, 0); }
+    100% { color: rgba(34, 34, 34, 1); }
+}
+@keyframes h1 {
+    0% { color: rgba(34, 34, 34, 1); }
+    50% { color: rgba(34, 34, 34, 0); }
+    100% { color: rgba(34, 34, 34, 1); }
+}
